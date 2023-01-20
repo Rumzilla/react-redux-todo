@@ -45,8 +45,9 @@ const updatePostRequestPostsActionCreator = () => ({
     type: UPDATE_POST.REQUEST
 })
 
-const updatePostReceivePostsActionCreator = () => ({
-    type: UPDATE_POST.RECEIVE
+const updatePostReceivePostsActionCreator = (data) => ({
+    type: UPDATE_POST.RECEIVE,
+    payload: data
 })
 
 const updatePostFailurePostsActionCreator = (err) => ({
@@ -60,8 +61,9 @@ const createPostRequestPostsActionCreator = () => ({
     type: CREATE_POST.REQUEST
 })
 
-const createPostReceivePostsActionCreator = () => ({
-    type: CREATE_POST.RECEIVE
+const createPostReceivePostsActionCreator = (data) => ({
+    type: CREATE_POST.RECEIVE,
+    payload: data
 })
 
 const createPostFailurePostsActionCreator = (err) => ({
@@ -75,8 +77,9 @@ const deletePostRequestPostsActionCreator = () => ({
     type: DELETE_POST.REQUEST
 })
 
-const deletePostReceivePostsActionCreator = () => ({
-    type: DELETE_POST.RECEIVE
+const deletePostReceivePostsActionCreator = (data) => ({
+    type: DELETE_POST.RECEIVE,
+    payload: data
 })
 
 const deletePostFailurePostsActionCreator = (err) => ({

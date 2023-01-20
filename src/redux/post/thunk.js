@@ -42,7 +42,7 @@ const createPost = () => async (dispatch) => {
             }
         })
         const parsedData = await req.json()
-        console.log(parsedData)
+        // console.log(parsedData)
         setTimeout(() => {
             dispatch(createPostReceivePostsActionCreator(parsedData))
         }, 20)
@@ -68,7 +68,7 @@ const updatePost = () => async (dispatch) => {
             }
         })
         const parsedData = await req.json()
-        console.log(parsedData)
+        // console.log(parsedData)
         setTimeout(() => {
             dispatch(updatePostReceivePostsActionCreator(parsedData))
         }, 20)
@@ -85,7 +85,7 @@ const deletePost = () => async (dispatch) => {
             method: 'DELETE'
         })
         const parsedData = await req.json()
-        console.log(parsedData)
+        // console.log(parsedData)
         setTimeout(() => {
             dispatch(deletePostReceivePostsActionCreator(parsedData))
         }, 2000)
